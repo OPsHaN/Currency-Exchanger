@@ -1,0 +1,30 @@
+@import "styles/mixins";
+@import "styles/default";
+@import "styles/loading";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "currency-flags/dist/currency-flags.css";
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  background-image: url("/assets/grid.jpg"); /* The image used */
+  // background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "../node_modules/bootstrap/scss/bootstrap";
